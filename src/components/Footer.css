@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap");
+
+:root {
+  --color-brand-1: hsl(25, 47%, 15%);
+  --color-brand-2: hsl(33, 100%, 98%);
+
+  --color-site-1: hsl(27, 66%, 92%);
+  --color-site-2: hsl(10, 79%, 65%);
+  --color-site-3: hsl(186, 34%, 60%);
+  --color-site-4: hsl(28, 10%, 53%);
+
+  --font-dm-sans: "DM Sans", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-dm-sans);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+footer {
+  background-color: var(--color-brand-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  position: relative;
+}
+
+footer::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 2rem;
+  right: 2rem;
+  display: block;
+  height: 1px;
+  background-color: var(--color-site-4);
+}
+
+.ThisMonth > p {
+  font-size: 1.6rem;
+  color: var(--color-site-4);
+  margin-bottom: 1rem;
+}
+
+.ThisMonth > h1 {
+  font-size: 2.6rem;
+  color: var(--color-brand-1);
+}
+
+.LastMonth > p:first-of-type {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+  color: var(--color-brand-1);
+  text-align: right;
+}
+
+.LastMonth > p:last-of-type {
+  font-size: 1.6rem;
+  color: var(--color-site-4);
+}
